@@ -31,6 +31,12 @@ public class Ship {
 		
 		delay++;
 		
+		if(x <= 0) {
+			x=0;
+		}else if(x >= MainGame.WIDTH - 45) {
+			x=MainGame.WIDTH - 45;
+		}
+		
 	}
 	
 	public void render(Graphics g) {

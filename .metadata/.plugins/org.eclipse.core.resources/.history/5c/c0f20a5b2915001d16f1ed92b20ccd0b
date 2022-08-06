@@ -1,0 +1,17 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Ship {
+	public Ship() {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void render(Graphics g) {
+		g.setColor(Color.green);
+		g.fillRect(MainGame.WIDTH/2, MainGame.HEIGHT/2, 20, 20);
+	}
+}

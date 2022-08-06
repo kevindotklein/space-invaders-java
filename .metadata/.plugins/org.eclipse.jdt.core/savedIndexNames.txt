@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\projects\java\games\space-invaders\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3530788382.index
+2042604127.index

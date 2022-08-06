@@ -1,0 +1,17 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Alien {
+	public Alien() {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void render(Graphics g) {
+		g.setColor(Color.orange);
+		g.fillRect(MainGame.WIDTH/2, 30, 30, 30);
+	}
+}

@@ -1,0 +1,15 @@
+
+public class Laser {
+	private int x, y;
+	public Laser() {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void render() {
+		
+	}
+}

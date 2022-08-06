@@ -34,8 +34,17 @@ public class GameHandler extends Canvas implements Runnable, KeyListener{
 			lasers.get(i).update();
 			if(lasers.get(i).getY() <= 0) {
 				lasers.remove(i);
+			}else {
+				for(int j=0; j<aliens.size(); j++) {
+					if(lasers.get(i).collide(aliens.get(j))) {
+						aliens.remove(j);
+						lasers.remove(i);
+						break;
+					}
+				}
 			}
 		}
+		
 		for(int i=0; i<aliens.size(); i++) {
 			aliens.get(i).update();
 			if(aliens.get(i).getX() == 0 || aliens.get(i).getX() >= MainGame.WIDTH - 60) {

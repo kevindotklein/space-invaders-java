@@ -17,6 +17,15 @@ public class Laser {
 		g.setColor(Color.red);
 		g.fillRect(x, y, 10, 20);
 	}
+	
+	public boolean collide(Alien alien) {
+		if(x + 10 >= alien.getX() && x <= alien.getX() + alien.getWidth()) {
+			if(y <= alien.getY() + alien.getHeight()) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 	public int getX() {
 		return x;

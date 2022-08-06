@@ -1,0 +1,20 @@
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+public class MainGame {
+
+	static final int WIDTH = 960;
+	static final int HEIGHT = 720;
+	
+	GameHandler gameHandler = new GameHandler();
+	
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("Space Invaders");
+		frame.setSize(new Dimension(WIDTH, HEIGHT));
+		frame.setLayout(null);
+		gameHandler.setBounds(0,0,WIDTH,HEIGHT);
+		frame.setVisible(true);
+	}
+
+}

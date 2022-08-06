@@ -1,0 +1,17 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Laser {
+	private int x, y;
+	public Laser(int x0, int y0) {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void render(Graphics g) {
+		g.setColor(Color.red);
+	}
+}

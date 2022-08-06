@@ -1,0 +1,22 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Ship {
+	private int x, y, width, height;
+	
+	public Ship() {
+		this.width = 20;
+		this.height = 20;
+		this.x = MainGame.WIDTH/2;
+		this.y = MainGame.HEIGHT - this.height - 10;
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void render(Graphics g) {
+		g.setColor(Color.green);
+		g.fillRect(MainGame.WIDTH/2, MainGame.HEIGHT/2, 20, 20);
+	}
+}
